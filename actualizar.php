@@ -9,7 +9,7 @@ $conexion = new mysqli($host, $user, $contra, $bd);
 
 $carnet = $_POST['carnet'];
 
-$consulta = "UPDATE your_table_name SET carrera = 'Graduado' WHERE carnet = :carnet";
+$consulta = "UPDATE alumnos SET carrera = 'Graduado' WHERE carnet = $carnet";
 
 $conexion->query($consulta);
 
