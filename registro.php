@@ -9,6 +9,9 @@ $bd = '';
 $username = '';
 $password = '';
 
+$url='registroHecho.html';
+$urlError='registroError.html';
+
 $fechaRegistro = date('Y-m-d');
 
 try {
