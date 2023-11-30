@@ -1,22 +1,19 @@
 <?php
 
+$host = '';
+$user = '';
+$contra = '';
+$bd = '';
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+$conexion = new mysqli($host, $user, $contra, $bd);
 
-    $carnet = $_POST["carnet"];
-    $url = 'lista.php';
+$carnet = $_POST['carnet'];
 
+$consulta = "UPDATE your_table_name SET carrera = 'Graduado' WHERE carnet = :carnet";
 
-    $sql = "UPDATE alumnos SET carrera = 'Graduado' WHERE carnet = :carnet";
+$conexion->query($consulta);
 
-    $stmt = $pdo->prepare($sql);
-    $stmt->bindParam(':carnet', $carnet, PDO::PARAM_STR);
+header("Location: " . "lista.php");
 
-    try {
-        $stmt->execute();
-        header("Location: " . $url);
-    } catch (PDOException $e) {
-        echo "Error: " . $e->getMessage();
-    }
-}
+$conexion->close();
 ?>
