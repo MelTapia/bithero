@@ -44,6 +44,13 @@
     </div>
     <button type="submit">Eliminar</button>
     </form>';
+    echo '<form action="actualizar.php" method="post">
+        <div>
+        <label for="carnet">Marcar graduado</label>
+        <input placeholder="Carnet" name="carnet" type="text" required>
+    </div>
+    <button type="submit">Actualizar</button>
+    </form>';
         echo "<table>";
         echo "<tr><th>Carnet de Identificación</th><th>Nombre Completo</th><th>E-mail</th><th>Carrera</th><th>Fecha de Registro</th></tr>";
         
