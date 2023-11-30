@@ -18,7 +18,7 @@ try {
   $dbh = new PDO("mysql:host=$host;dbname=$bd", $username, $password);
   $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   
-  $stmt = $dbh->prepare("INSERT INTO alumnos (carnet, nombreCompleto, email, carrera, fechaRegistro) VALUES (:numeroCuenta, :nombreCompleto, :email, :carrera, :fechaRegistro)");
+  $stmt = $dbh->prepare("INSERT INTO alumnos (carnet, nombreCompleto, email, carrera, fechaRegistro) VALUES (:carnet, :nombreCompleto, :email, :carrera, :fechaRegistro)");
   $stmt->bindParam(':carnet', $carnet);
   $stmt->bindParam(':nombreCompleto', $nombreCompleto);
   $stmt->bindParam(':email', $email);
