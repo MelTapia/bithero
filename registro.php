@@ -1,5 +1,5 @@
 <?php
-$numeroCuenta = $_POST['numeroCuenta'];
+$carnet = $_POST['carnet'];
 $nombreCompleto = $_POST['nombreCompleto'];
 $email = $_POST['email'];
 $carrera = $_POST['carrera'];
