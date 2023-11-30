@@ -19,7 +19,9 @@
 <body>
     <nav>
         <div >
-            <a href="index.html">BitHero</a>
+            <a href="index.html">
+                <button>Inicio BitHero</button>
+            </a>
         </div>
     </nav>
     <?php
@@ -40,7 +42,7 @@
         <label for="carnet">Carnet</label>
         <input placeholder="Carnet" name="carnet" type="text" required>
     </div>
-    <button type="submit">Enviar</button>
+    <button type="submit">Eliminar</button>
     </form>';
         echo "<table>";
         echo "<tr><th>Carnet de Identificación</th><th>Nombre Completo</th><th>E-mail</th><th>Carrera</th><th>Fecha de Registro</th></tr>";
