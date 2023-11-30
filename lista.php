@@ -39,7 +39,7 @@
         echo '
         <form action="eliminar.php" method="post">
         <div>
-        <label for="carnet">Carnet</label>
+        <label for="carnet">Eliminar Carnet</label>
         <input placeholder="Carnet" name="carnet" type="text" required>
     </div>
     <button type="submit">Eliminar</button>
