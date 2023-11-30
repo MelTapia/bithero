@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Lista de Alumnos</title>
+    <link rel="icon" type="image/x-icon" href="/recursos/robot.png">
+    <link rel="stylesheet" href="estiloBase.css">
     <style>
         table {
             border-collapse: collapse;
@@ -46,7 +48,7 @@
         while ($row = $result->fetch_assoc()) {
             echo "<tr>";
             echo "<td>" . $row['carnet'] . "</td>";
-            echo "<td>" . $row['nombre'] . "</td>";
+            echo "<td>" . $row['nombreCompleto'] . "</td>";
             echo "<td>" . $row['email'] . "</td>";
             echo "<td>" . $row['carrera'] . "</td>";
             echo "<td>" . $row['fechaRegistro'] . "</td>";

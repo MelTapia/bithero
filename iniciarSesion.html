@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BitHero</title>
     <link rel="icon" type="image/x-icon" href="/recursos/robot.png">
+    <link rel="stylesheet" href="estiloBase.css">
 </head>
 <body>
     <h1>Iniciar Sesión</h1>
         <form action="iniciarSesion.php" method="post">
+            <div>
                 <label for="email">E-mail</label>
                 <input placeholder="E-mail" name="email" type="text" required>
+            </div>
+            <div>
                 <label for="carnet">Carnet</label>
                 <input placeholder="Carnet" name="carnet" type="text" required>
+            </div>
+                
             <button type="submit">Enviar</button>
     </form>
 </body>
